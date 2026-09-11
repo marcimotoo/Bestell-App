@@ -1,0 +1,65 @@
+.warenkorb {
+  height: 100dvh;
+  width: 200px;
+  background: black;
+  position: sticky;
+}
+
+table {
+  background-color: rgb(239, 213, 213);
+  height: auto;
+  width: 100%;
+  padding: 16px;
+  position: relative;
+}
+
+tr {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+}
+
+th {
+  position: relative;
+}
+
+td {
+}
+
+button {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 140px;
+  right: 15px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  scale: 1.1;
+}
+
+button:active {
+  scale: 1.2;
+}
+
+.x-y {
+  height: 30px;
+  width: 3px;
+  background: black;
+  transform: translate(1px);
+}
+
+.x-x {
+  height: 30px;
+  width: 3px;
+  background: black;
+  transform: translate(-2px) rotate(90deg);
+}
