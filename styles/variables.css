@@ -1,4 +1,78 @@
 :root {
-  --main-color: orange;
-  --secondary-color: green;
+  /* Brand Colors */
+  --color-primary: #00ff99;
+  --color-primary-hover: #00d982;
+  --color-primary-dark: #00995c;
+
+  /* Background Colors */
+  --color-bg: #0b0f0e;
+  --color-bg-secondary: #111715;
+  --color-bg-card: #ffffff;
+  --color-bg-card-soft: #f4f6f5;
+  --color-bg-overlay: rgb(0 0 0 / 70%);
+
+  /* Text Colors */
+  --color-text: #f5f7f6;
+  --color-text-dark: #111715;
+  --color-text-muted: #a7b0ac;
+  --color-text-muted-dark: #626b67;
+
+  /* Border Colors */
+  --color-border: #27302d;
+  --color-border-light: #dfe4e2;
+
+  /* Status Colors */
+  --color-rating: #ffc107;
+  --color-success: #00c97a;
+  --color-danger: #e5484d;
+
+  /* Fonts */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-hero: clamp(2rem, 5vw, 4rem);
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+
+  /* Border Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-round: 50%;
+
+  /* Shadows */
+  --shadow-card: 0 4px 16px rgb(0 0 0 / 12%);
+  --shadow-basket: 0 8px 30px rgb(0 0 0 / 35%);
+
+  /* Layout */
+  --content-width: 1440px;
+  --header-height: 72px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-default: 250ms ease;
+
+  /* Focus */
+  --focus-outline: 3px solid var(--color-primary);
+  --focus-offset: 3px;
 }
