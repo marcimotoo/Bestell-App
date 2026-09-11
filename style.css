@@ -1,24 +1,94 @@
 body {
   background: var(--color-bg);
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text);
 }
-
+/* SECTION Header  */
 header {
-  background: var(--color-text-muted);
+  background: var(--color-bg-secondary);
 
-  height: 100px;
+  height: 80px;
   width: 100%;
 
-  padding: 0px max(calc(50% - 720px), 0px);
+  padding: 0px max(calc(50% - 720px), 64px);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.header-logo {
+  height: 100%;
+  font-size: 64px;
+
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  height: 85%;
+}
+
+nav {
+  font-weight: var(--font-weight-medium);
+  display: flex;
+  gap: 24px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-text);
+  transition: all 0.3s ease;
+}
+
+.nav-links > a:hover {
+  color: var(--color-primary);
+  border-bottom: 3px solid var(--color-primary);
+  padding-bottom: 10px;
+}
+/* SECTION Main  */
 main {
-  background: var(--color-text-muted);
   padding: 0px max(calc(50% - 720px), 0px);
 }
 
+.hero-section {
+  width: 100%;
+  min-height: 35vh;
+  background-image: url(./assets/images/bytebites-hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* SECTION Footer  */
 footer {
   padding: 0px max(calc(50% - 720px), 0px);
 
   height: 100px;
   width: 100%;
+}
+
+.hero-title {
+  font-weight: var(--font-weight-extrabold);
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-2xl);
+}
+
+span {
+  color: var(--color-primary);
+}
+
+svg {
+  color: var(--color-bg-card-soft);
 }
