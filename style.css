@@ -4,7 +4,7 @@ body {
   font-weight: var(--font-weight-regular);
   color: var(--color-text);
 }
-/* SECTION Header  */
+/* SECTION - Header  */
 header {
   background: var(--color-bg-secondary);
   padding: 0px max(calc(50% - 720px), 0px);
@@ -14,20 +14,18 @@ header {
   width: 100%;
   height: 80px;
 
-  padding: 0 32px;
+  padding: 0 8px;
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-/* ANCHOR Header Logo */
+/* ANCHOR Header - Logo */
 
 .header-logo {
   height: 100%;
   font-size: 64px;
 
   display: flex;
-  align-items: center;
 }
 
 .header-logo img {
@@ -35,9 +33,8 @@ header {
 }
 /* ANCHOR Navigation */
 .nav-links {
-  font-weight: var(--font-weight-medium);
   display: flex;
-  align-items: center;
+  font-weight: var(--font-weight-medium);
   gap: 24px;
   transition: all 0.3s ease;
 }
@@ -54,10 +51,9 @@ header {
   border-bottom: 3px solid var(--color-primary);
   padding-bottom: 10px;
 }
-/* ANCHIR Suchen Pofil Warenkorb */
+/* ANCHIR - Suchen Pofil Warenkorb */
 .search-profile-basket {
   display: flex;
-  align-items: center;
   gap: 16px;
 }
 
@@ -72,11 +68,11 @@ header {
   cursor: pointer;
   color: var(--color-primary);
 }
-/* SECTION Main  */
+/* SECTION - Main  */
 main {
   padding: 0px max(calc(50% - 720px), 0px);
 }
-
+/* ANCHOR - Hero  */
 .hero-section {
   width: 100%;
   min-height: 35vh;
@@ -86,13 +82,12 @@ main {
   background-size: cover;
   position: relative;
 }
-
+/* ANCHOR - Logo  */
 .bytebites-logo {
   width: clamp(150px, 5vw, 100px);
 
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   position: absolute;
   top: 87%;
@@ -112,12 +107,132 @@ main {
   border: 2px solid var(--color-primary);
   border-radius: 50%;
 }
-/* SECTION Footer  */
+/* ANCHOR - Information  */
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 16px;
+}
+
+.information > p {
+  line-height: 1.4rem;
+  max-width: 64ch;
+}
+
+.extra-information {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.rating4 {
+  color: var(--color-rating);
+  fill: var(--color-rating);
+}
+.rating3 {
+  color: var(--color-rating);
+  fill: var(--color-rating);
+}
+.rating2 {
+  color: var(--color-rating);
+  fill: var(--color-rating);
+}
+.rating1 {
+  color: var(--color-rating);
+  fill: var(--color-rating);
+}
+
+.rating,
+.delevery-location > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.delevery-location {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+/* ANCHOR - Food-Menu */
+#food_card {
+  width: 100%;
+  height: 1000px;
+  background: var(--color-bg-card);
+  color: var(--color-text-dark);
+  border-radius: 10px;
+}
+
+article {
+  flex-wrap: nowrap;
+  display: flex;
+  height: 200px;
+  width: 100%;
+  padding:8px
+}
+
+article img {
+  width: auto;
+  height: 100%;
+  border-radius: 16px;
+  
+.title-description-price b {
+  text-align: left;
+}
+
+
+.add-basket {
+  width: 50px;
+  height: 50px;
+  background: var(--color-primary);
+  border-radius: 50%;
+}
+
+/* SECTION - Footer  */
 footer {
   padding: 0px max(calc(50% - 720px), 0px);
 
   height: 100px;
   width: 100%;
+}
+
+/* SECTION - Mobile Nav  */
+.mobile-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  position: fixed;
+
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: var(--color-primary);
+
+  height: 60px;
+  width: 96%;
+
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.mobile-nav svg {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  color: var(--color-text-dark);
+}
+
+.mobile-nav span {
+  color: var(--color-text-dark);
+  font-size: 25px;
 }
 
 .hero-title {
@@ -143,4 +258,10 @@ span {
 
 svg {
   color: var(--color-bg-card-soft);
+}
+
+@media screen and (min-width: 481px) {
+  .mobile-nav {
+    display: none;
+  }
 }
