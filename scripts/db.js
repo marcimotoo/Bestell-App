@@ -1,4 +1,4 @@
-const menu = [
+const foodMenu = [
   {
     category: 'Byte Burgers',
     products: [

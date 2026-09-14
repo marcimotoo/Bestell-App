@@ -7,8 +7,8 @@
     <title>ByteBites</title>
     <link rel="shortcut icon" href="./assets/images/bytebites.png" type="image/x-icon" />
 
-    <script src="./scripts/template.js" defer></script>
     <script src="./scripts/db.js" defer></script>
+    <script src="./scripts/template.js" defer></script>
     <script src="./script.js" defer></script>
 
     <link rel="stylesheet" href="./styles/fonts.css" />
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./styles/basket.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body onload="init()">
     <!-- SECTION - Header  -->
     <header>
       <section class="header-section">
@@ -227,36 +227,7 @@
         </div>
       </section>
       <!-- ANCHOR - Food Menu  -->
-      <section id="food_cards">
-        <article>
-          <img src="./assets/products/double-stack.png" alt="" />
-          <div class="title-description-price">
-            <h4>Classic Byte</h4>
-            <p>Rindfleisch, Cheddar, Salat, Tomate, Zwiebeln, Bürgersauce</p>
-            <div class="price-and-add-to-basket">
-              <b>9,99 €</b>
-              <button id="add-to-basket">
-                <svg
-                  class="center-svg"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14" />
-                  <path d="M12 5v14" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </article>
-      </section>
+      <section id="food_cards"></section>
     </main>
     <!-- SECTION - Footer  -->
     <footer class="header-section">
