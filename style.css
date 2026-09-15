@@ -206,10 +206,11 @@ main {
   color: var(--color-text-dark);
   border-radius: 16px;
   margin: 32px;
+  padding: 0px 32px 32px 32px;
 }
 
 .category {
-  padding: 16px;
+  padding: 32px 0px;
 }
 
 #food_card0,
@@ -231,8 +232,8 @@ article {
 
   height: 200px;
   /* max-width: 100%; */
-  margin: 8px;
-  padding: 8px;
+  margin: 0px;
+  padding: 2px;
 }
 
 article img {

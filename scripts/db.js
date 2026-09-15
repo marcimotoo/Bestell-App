@@ -8,7 +8,7 @@ const foodMenu = [
         name: 'Classic Byte',
         description: 'Saftiges Rindfleisch, Cheddar, Salat, Tomate und ByteBites-Sauce.',
         price: 10.9,
-        altText: 'Burger mit Rindfleisch, Cheddar, Salat und Tomate',
+        alt: 'Burger mit Rindfleisch, Cheddar, Salat und Tomate',
         src: './assets/products/classic-byte.png',
       },
       {
@@ -16,7 +16,7 @@ const foodMenu = [
         name: 'Double Stack',
         description: 'Doppeltes Rindfleisch, doppelter Cheddar, Röstzwiebeln und rauchige BBQ-Sauce.',
         price: 13.9,
-        altText: 'Doppelter Burger mit Cheddar, Röstzwiebeln und BBQ-Sauce',
+        alt: 'Doppelter Burger mit Cheddar, Röstzwiebeln und BBQ-Sauce',
         src: './assets/products/double-stack.png',
       },
       {
@@ -24,7 +24,7 @@ const foodMenu = [
         name: 'Hotfix Burger',
         description: 'Rindfleisch, Pepper Jack, Jalapeños, Salat und scharfe Chipotle-Sauce.',
         price: 12.5,
-        altText: 'Scharfer Burger mit Käse, Jalapeños und Chipotle-Sauce',
+        alt: 'Scharfer Burger mit Käse, Jalapeños und Chipotle-Sauce',
         src: './assets/products/hotfix-burger.png',
       },
       {
@@ -32,7 +32,7 @@ const foodMenu = [
         name: 'Green Coder',
         description: 'Knuspriges Gemüse-Patty, Avocado, Salat, Tomate und vegane Kräutersauce.',
         price: 11.9,
-        altText: 'Veganer Burger mit Gemüse-Patty, Avocado und Salat',
+        alt: 'Veganer Burger mit Gemüse-Patty, Avocado und Salat',
         src: './assets/products/green-coder.png',
       },
     ],
@@ -46,7 +46,7 @@ const foodMenu = [
         name: 'Basic Fries',
         description: 'Knusprige Pommes mit Meersalz und Dip nach Wahl.',
         price: 4.5,
-        altText: 'Portion knusprige Pommes mit Meersalz und einem Dip',
+        alt: 'Portion knusprige Pommes mit Meersalz und einem Dip',
         src: './assets/products/basic-fries.png',
       },
       {
@@ -54,7 +54,7 @@ const foodMenu = [
         name: 'Cheese Overflow',
         description: 'Pommes mit cremiger Käsesauce, Frühlingszwiebeln und Röstzwiebeln.',
         price: 6.9,
-        altText: 'Pommes mit Käsesauce, Frühlingszwiebeln und Röstzwiebeln',
+        alt: 'Pommes mit Käsesauce, Frühlingszwiebeln und Röstzwiebeln',
         src: './assets/products/cheese-overflow.png',
       },
       {
@@ -62,7 +62,7 @@ const foodMenu = [
         name: 'Spicy Firewall',
         description: 'Pommes mit Jalapeños, Chili-Cheese-Sauce und scharfen Gewürzen.',
         price: 7.5,
-        altText: 'Scharfe Pommes mit Jalapeños und Chili-Cheese-Sauce',
+        alt: 'Scharfe Pommes mit Jalapeños und Chili-Cheese-Sauce',
         src: './assets/products/spicy-firewall.png',
       },
       {
@@ -70,7 +70,7 @@ const foodMenu = [
         name: 'BBQ Upgrade',
         description: 'Pommes mit Pulled Chicken, BBQ-Sauce, Käse und Röstzwiebeln.',
         price: 8.9,
-        altText: 'Pommes mit Pulled Chicken, Käse, BBQ-Sauce und Röstzwiebeln',
+        alt: 'Pommes mit Pulled Chicken, Käse, BBQ-Sauce und Röstzwiebeln',
         src: './assets/products/bbq-upgrade.png',
       },
     ],
@@ -84,7 +84,7 @@ const foodMenu = [
         name: 'Green Stack',
         description: 'Blattsalat, Avocado, Gurke, Tomate, Edamame und Kräuterdressing.',
         price: 9.9,
-        altText: 'Grüne Bowl mit Avocado, Gurke, Tomate und Edamame',
+        alt: 'Grüne Bowl mit Avocado, Gurke, Tomate und Edamame',
         src: './assets/products/green-stack.png',
       },
       {
@@ -92,7 +92,7 @@ const foodMenu = [
         name: 'Chicken Cache',
         description: 'Gegrilltes Hähnchen, Reis, Salat, Mais, Tomate und Joghurt-Dressing.',
         price: 11.9,
-        altText: 'Bowl mit gegrilltem Hähnchen, Reis, Mais und Tomaten',
+        alt: 'Bowl mit gegrilltem Hähnchen, Reis, Mais und Tomaten',
         src: './assets/products/chicken-cache.png',
       },
       {
@@ -100,7 +100,7 @@ const foodMenu = [
         name: 'Power Process',
         description: 'Quinoa, Süßkartoffel, Kichererbsen, Spinat und cremiges Tahini-Dressing.',
         price: 10.9,
-        altText: 'Bowl mit Quinoa, Süßkartoffel, Kichererbsen und Spinat',
+        alt: 'Bowl mit Quinoa, Süßkartoffel, Kichererbsen und Spinat',
         src: './assets/products/power-process.png',
       },
       {
@@ -108,7 +108,7 @@ const foodMenu = [
         name: 'Crunch Mode',
         description: 'Knuspriges Hähnchen, Salat, Rotkohl, Karotte und Honig-Senf-Dressing.',
         price: 12.5,
-        altText: 'Bowl mit knusprigem Hähnchen, Salat, Rotkohl und Karotte',
+        alt: 'Bowl mit knusprigem Hähnchen, Salat, Rotkohl und Karotte',
         src: './assets/products/crunch-mode.png',
       },
     ],
