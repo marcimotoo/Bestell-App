@@ -1,15 +1,19 @@
-let currentCategoryIndex = 0;
-
 function init() {
-  renderFoodMenu();
+  renderSection();
 }
 
-function renderFoodMenu() {
-  const foodMenuSectionRef = document.getElementById('food_cards');
+function renderSection() {
+  const foodSectionRef = document.getElementById('food_section');
 
   for (let categoryIndex = 0; categoryIndex < foodMenu.length; categoryIndex++) {
-    for (let productIndex = 0; productIndex < foodMenu[categoryIndex].products.length; productIndex++) {
-      foodMenuSectionRef.innerHTML += foodCardTemplate(categoryIndex, productIndex);
-    }
+    foodSectionRef.innerHTML += foodCategoryTemplate(categoryIndex);
+  }
+  renderFoodCard(categoryIndex);
+}
+
+function renderFoodCard(categoryIndex) {
+  const foodCategoryRef = document.getElementById('food_category' + categoryIndex);
+  for (let productIndex = 0; productIndex < foodMenu[categoryIndex].products.length; productIndex++) {
+    foodCategoryRef.innerHTML += foodCardsTemplate(categoryIndex, productIndex);
   }
 }
