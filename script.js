@@ -3,17 +3,12 @@ function init() {
 }
 
 function renderSection() {
-  const foodSectionRef = document.getElementById('food_section');
-
   for (let categoryIndex = 0; categoryIndex < foodMenu.length; categoryIndex++) {
+    const foodSectionRef = document.getElementById('food_section');
     foodSectionRef.innerHTML += foodCategoryTemplate(categoryIndex);
-  }
-  renderFoodCard(categoryIndex);
-}
-
-function renderFoodCard(categoryIndex) {
-  const foodCategoryRef = document.getElementById('food_category' + categoryIndex);
-  for (let productIndex = 0; productIndex < foodMenu[categoryIndex].products.length; productIndex++) {
-    foodCategoryRef.innerHTML += foodCardsTemplate(categoryIndex, productIndex);
+    for (let productIndex = 0; productIndex < foodMenu[categoryIndex].products.length; productIndex++) {
+      const foodCategoryRef = document.getElementById('food_card' + categoryIndex);
+      foodCategoryRef.innerHTML += foodCardsTemplate(categoryIndex, productIndex);
+    }
   }
 }

@@ -1,8 +1,10 @@
 function foodCategoryTemplate(categoryIndex) {
   return /*html*/ `
-  <section id="food_category${categoryIndex}">
+  <div class="category">
     <h2>${foodMenu[categoryIndex].category}</h2>
-  </section>
+    <p>${foodMenu[categoryIndex].categoryDescription}</p>
+  </div>
+  <div id="food_card${categoryIndex}"></div>
     `;
 }
 

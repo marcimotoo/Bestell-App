@@ -1,6 +1,7 @@
 const foodMenu = [
   {
     category: 'Byte Burgers',
+    categoryDescription: 'Saftige Burger, frische Zutaten. 100 % Geschmack.',
     products: [
       {
         id: 1,
@@ -38,6 +39,7 @@ const foodMenu = [
   },
   {
     category: 'Loaded Fries',
+    categoryDescription: 'Mehr als nur Pommes.',
     products: [
       {
         id: 5,
@@ -75,6 +77,7 @@ const foodMenu = [
   },
   {
     category: 'Fresh Bowls',
+    categoryDescription: 'Frische Zutaten, bunte Vielfalt. Bowl für Bowl.',
     products: [
       {
         id: 9,

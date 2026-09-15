@@ -201,33 +201,43 @@ main {
   gap: 16px;
 }
 /* ANCHOR - Food-Menu */
-#food_cards {
+#food_section {
+  background: var(--color-bg-card);
+  color: var(--color-text-dark);
+  border-radius: 16px;
+  margin: 32px;
+}
+
+.category {
+  padding: 16px;
+}
+
+#food_card0,
+#food_card1,
+#food_card2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
+  max-width: 700px;
   height: auto;
-  background: var(--color-bg-card-soft);
-  color: var(--color-text-dark);
   border-radius: 16px;
 }
 
 article {
-  background: var(--color-bg-card);
-  flex-wrap: nowrap;
+  display: flex;
+  background: var(--color-bg-card-soft);
   border: 1px solid black;
   border-radius: 16px;
-  margin: 8px;
-  display: flex;
+
   height: 200px;
-  max-width: 500px;
+  /* max-width: 100%; */
+  margin: 8px;
   padding: 8px;
 }
 
 article img {
-  min-width: 85px;
-  object-fit: cover;
   height: 100%;
+  width: auto;
   border-radius: 16px;
 }
 
