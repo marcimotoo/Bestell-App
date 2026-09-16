@@ -11,7 +11,9 @@ function foodCategoryTemplate(categoryIndex) {
 function foodCardsTemplate(categoryIndex, productIndex) {
   return /*html*/ `
     <article>
-      <img src="${foodMenu[categoryIndex].products[productIndex].src}" alt="${foodMenu[categoryIndex].products[productIndex].alt}" />
+      <div class="food-picture">
+        <img src="${foodMenu[categoryIndex].products[productIndex].src}" alt="${foodMenu[categoryIndex].products[productIndex].alt}" />
+      </div>
       <div class="title-description-price">
         <h4>${foodMenu[categoryIndex].products[productIndex].name}</h4>
         <p>${foodMenu[categoryIndex].products[productIndex].description}</p>

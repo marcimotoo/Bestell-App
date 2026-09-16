@@ -68,7 +68,7 @@ header {
 /* ANCHOR Navigation */
 .info-links,
 .nav-links {
-  display: flex;
+  display: none;
   align-items: center;
   font-weight: var(--font-weight-medium);
   gap: 24px;
@@ -89,7 +89,7 @@ header {
 }
 /* ANCHOR - Suchen Pofil Warenkorb */
 .search-profile-basket {
-  display: flex;
+  display: none;
   align-items: center;
 
   gap: 16px;
@@ -224,21 +224,27 @@ main {
   border-radius: 16px;
 }
 
+.food-picture {
+  height: 250px;
+  height: 100%;
+}
+
 article {
   display: flex;
+  flex-direction: column;
   background: var(--color-bg-card-soft);
   border: 1px solid black;
   border-radius: 16px;
 
-  height: 200px;
-  /* max-width: 100%; */
+  max-height: 250px;
+  width: 100%;
   margin: 0px;
   padding: 2px;
 }
 
 article img {
   height: 100%;
-  width: auto;
+  width: 100%;
   border-radius: 16px;
 }
 
@@ -248,6 +254,7 @@ article img {
   align-items: flex-start;
   gap: 16px;
   padding: 16px;
+  flex: 1;
 }
 
 .price-and-add-to-basket {
@@ -329,5 +336,10 @@ article img {
 @media screen and (min-width: 481px) {
   .mobile-nav {
     display: none;
+  }
+
+  article {
+    display: flex;
+    flex-direction: row;
   }
 }
