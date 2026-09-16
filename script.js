@@ -12,3 +12,13 @@ function renderSection() {
     }
   }
 }
+
+function addToBasket(pruductId, categoryIndex, productIndex) {
+  const basketPoductsRef = document.getElementById('basket_products');
+  console.log(pruductId); // id wird übergeben
+  console.log(categoryIndex); // categoryIndex wird übergeben
+  console.log(productIndex); // pruducIndex wird übergeben
+  console.log(foodMenu[categoryIndex].products[productIndex].name);
+
+  basketPoductsRef.innerHTML += basketArticleTemplate(categoryIndex, productIndex);
+}

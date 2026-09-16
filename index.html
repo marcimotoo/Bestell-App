@@ -228,61 +228,99 @@
       </section>
       <!-- ANCHOR - Food Menu  -->
       <section id="food_section">
-        <section id="food_basket">
-          <div class="text-left">
-            <h3>Dein Warenkorb</h3>
-          </div>
-          <div>
-            <div class="basket-card">
-              <img src="./assets/products/basic-fries.png" alt="" />
-              <div>
-                <h5>Classic Byte</h5>
-                <p>1x 9,90 €</p>
+        <!-- ANCHOR - Food Basket  -->
+        <aside class="basket-sidebar">
+          <section id="food_basket">
+            <div class="basket-header">
+              <h3>Dein Warenkorb</h3>
+              <p>3 Artikel</p>
+            </div>
+
+            <div id="basket_products">
+              <article class="basket-card">
+                <img src="./assets/products/classic-byte.png" alt="Classic Byte Burger" />
+                <div class="title-price">
+                  <h5>Classic Byte</h5>
+                  <p>1 × 9,90 €</p>
+                </div>
+                <div class="number-box">
+                  <div class="minus-number-plus">
+                    <button class="svg-center" aria-label="Classic Byte Anzahl verringern">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M5 12h14" />
+                      </svg>
+                    </button>
+                    <p>1</p>
+                    <button class="svg-center" aria-label="Classic Byte Anzahl erhöhen">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M5 12h14" />
+                        <path d="M12 5v14" />
+                      </svg>
+                    </button>
+                  </div>
+                  <h4>9,90 €</h4>
+                </div>
+              </article>
+            </div>
+
+            <div class="basket-summary">
+              <div class="summary-row">
+                <p>Zwischensumme</p>
+                <p>29,70 €</p>
               </div>
-              <div class="number-box">
-                <div class="minus-number-plus">
-                  <button class="svg-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="M5 12h14" />
-                    </svg>
-                  </button>
-                  <p>1</p>
-                  <button class="svg-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="M5 12h14" />
-                      <path d="M12 5v14" />
-                    </svg>
-                  </button>
-                </div>
-                <div>
-                  <h4>aktueller preis</h4>
-                </div>
+              <div class="summary-row">
+                <p>Liefergebühr</p>
+                <p>2,90 €</p>
               </div>
             </div>
-          </div>
-        </section>
+            <div class="checkout-section">
+              <div class="total-row">
+                <h4>Gesamt</h4>
+                <p>32,60 €</p>
+              </div>
+              <button>
+                Zur Kasse
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </section>
+
+          <section class="extra-info-card">
+            <div class="extra-info">
+              <div class="extra-info-icon"><img src="./assets/icons/truck.svg" alt="" /></div>
+              <div>
+                <h4>Lieferung in 25–40 Minuten</h4>
+                <p>Frisch zubereitet & heiß bei dir.</p>
+              </div>
+            </div>
+            <div class="extra-info">
+              <div class="extra-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 18 2 18 2c1 5-1 12-7 14" />
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6.94C9.38 12.93 12 12 16 12" />
+                </svg>
+              </div>
+              <div>
+                <h4>Regionale Zutaten</h4>
+                <p>Qualität, die man schmeckt.</p>
+              </div>
+            </div>
+            <div class="extra-info">
+              <div class="extra-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z" />
+                </svg>
+              </div>
+              <div>
+                <h4>Mehr als 1.000 zufriedene Kunden</h4>
+                <p>4,8 Sterne Durchschnittsbewertung.</p>
+              </div>
+            </div>
+          </section>
+        </aside>
       </section>
     </main>
     <!-- SECTION - Footer  -->

@@ -214,6 +214,10 @@ main {
   padding: 32px 0px;
 }
 
+.category p {
+  color: var(--color-text-muted-dark);
+}
+
 #food_card0,
 #food_card1,
 #food_card2 {
@@ -230,7 +234,7 @@ main {
   height: 100%;
 }
 
-article {
+.food-article {
   display: flex;
   flex-direction: column;
   background: var(--color-bg-card-soft);
@@ -243,7 +247,7 @@ article {
   padding: 2px;
 }
 
-article img {
+.food-article img {
   height: 100%;
   width: 100%;
   border-radius: 16px;
@@ -256,6 +260,10 @@ article img {
   gap: 16px;
   padding: 16px;
   flex: 1;
+}
+
+.title-description-price p {
+  color: var(--color-text-muted-dark);
 }
 
 .price-and-add-to-basket {
@@ -286,6 +294,7 @@ article img {
 #add-to-basket:active {
   scale: 0.9;
 }
+
 .center-svg {
   cursor: pointer;
   color: var(--color-text-dark);
@@ -339,7 +348,7 @@ article img {
     display: none;
   }
 
-  article {
+  .food-article {
     display: flex;
     flex-direction: row;
   }
