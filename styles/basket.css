@@ -11,7 +11,7 @@
   width: min(400px, calc(100% - 40px));
 }
 
-#food_basket {
+.food_basket {
   display: flex;
   flex-direction: column;
   min-height: 0;

@@ -19,6 +19,6 @@ function addToBasket(pruductId, categoryIndex, productIndex) {
   console.log(categoryIndex); // categoryIndex wird übergeben
   console.log(productIndex); // pruducIndex wird übergeben
   console.log(foodMenu[categoryIndex].products[productIndex].name);
-
-  basketPoductsRef.innerHTML += basketArticleTemplate(categoryIndex, productIndex);
 }
+
+function renderBasket() {}
