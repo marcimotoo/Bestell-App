@@ -207,6 +207,7 @@ main {
   border-radius: 16px;
   margin: 32px;
   padding: 0px 32px 32px 32px;
+  position: relative;
 }
 
 .category {
