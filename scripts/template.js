@@ -65,9 +65,8 @@ function basketArticleTemplate(basketProduct, menuProduct) {
                       </svg>
                     </button>
                   </div>
-                  <h4>${menuProduct.price.toFixed(2)} €</h4>
+                  <h4>${(menuProduct.price * basketProduct.amount).toFixed(2)} €</h4>
                 </div>
               </article>
-            </div>
   `;
 }

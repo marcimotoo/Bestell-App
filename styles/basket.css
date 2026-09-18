@@ -1,7 +1,7 @@
 .basket-sidebar {
   position: absolute;
   right: 20px;
-  top: 20px;
+  top: 130px;
   z-index: 10;
 
   display: flex;
@@ -42,7 +42,7 @@
   font-weight: var(--font-weight-semibold);
 }
 
-#basket-products {
+#basket_products {
   flex: 1;
   min-height: 0;
   overflow-y: auto;
