@@ -13,12 +13,38 @@ function renderSection() {
   }
 }
 
-function addToBasket(pruductId, categoryIndex, productIndex) {
-  const basketPoductsRef = document.getElementById('basket_products');
-  console.log(pruductId); // id wird übergeben
-  console.log(categoryIndex); // categoryIndex wird übergeben
-  console.log(productIndex); // pruducIndex wird übergeben
-  console.log(foodMenu[categoryIndex].products[productIndex].name);
+function addToBasket(productId) {
+  let findIndexFoodBasket = foodBasket.findIndex((basketProduct) => basketProduct.id === productId);
+
+  if (findIndexFoodBasket === -1) {
+    foodBasket.push({ id: productId, amount: 1 });
+  } else {
+    foodBasket[findIndexFoodBasket].amount = foodBasket[findIndexFoodBasket].amount + 1;
+  }
+
+  renderBasket();
 }
 
-function renderBasket() {}
+function renderBasket() {
+  const basketPoductsRef = document.getElementById('basket_products');
+  basketPoductsRef.innerHTML = '';
+
+  for (let basketIndex = 0; basketIndex < foodBasket.length; basketIndex++) {
+    const basketProduct = foodBasket[basketIndex];
+    const menuProduct = findPoductById(basketProduct.id);
+
+    basketPoductsRef.innerHTML += basketArticleTemplate(basketProduct, menuProduct);
+    console.log(menuProduct);
+  }
+}
+
+function findPoductById(productId) {
+  for (let i = 0; i < foodMenu.length; i++) {
+    const menuProduct = foodMenu[i].products.find((product) => product.id === productId);
+
+    if (menuProduct) {
+      return menuProduct;
+    }
+  }
+}
+// renderBasket();

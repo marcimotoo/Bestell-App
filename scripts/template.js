@@ -19,7 +19,7 @@ function foodCardsTemplate(categoryIndex, productIndex) {
         <p>${foodMenu[categoryIndex].products[productIndex].description}</p>
         <div class="price-and-add-to-basket">
           <b>${foodMenu[categoryIndex].products[productIndex].price.toFixed(2)}€</b>
-          <button onclick="addToBasket(${foodMenu[categoryIndex].products[productIndex].id}, ${categoryIndex}, ${productIndex})" id="add-to-basket">
+          <button onclick="addToBasket(${foodMenu[categoryIndex].products[productIndex].id},${categoryIndex})" id="add-to-basket">
             <svg
             class="center-svg"
             xmlns="http://www.w3.org/2000/svg"
@@ -42,30 +42,30 @@ function foodCardsTemplate(categoryIndex, productIndex) {
   </article>`;
 }
 
-function basketArticleTemplate(categoryIndex, productIndex) {
+function basketArticleTemplate(basketProduct, menuProduct) {
   return /*html*/ `
     <article class="basket-card">
-                <img src="${foodMenu[categoryIndex].products[productIndex].src}" alt="${foodMenu[categoryIndex].products[productIndex].alt}" />
+                <img src="${menuProduct.src}" alt="${menuProduct.alt}" />
                 <div class="title-price">
-                  <h5>${foodMenu[categoryIndex].products[productIndex].name}</h5>
-                  <p>1 × ${foodMenu[categoryIndex].products[productIndex].price.toFixed(2)} €</p>
+                  <h5>${menuProduct.name}</h5>
+                  <p>1 × ${menuProduct.price.toFixed(2)} €</p>
                 </div>
                 <div class="number-box">
                   <div class="minus-number-plus">
-                    <button class="svg-center" aria-label="Green Power Bowl Anzahl verringern">
+                    <button onclick="removeFromBasket(${basketProduct.id})" class="svg-center" aria-label="Green Power Bowl Anzahl verringern">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                         <path d="M5 12h14" />
                       </svg>
                     </button>
-                    <p>1</p>
-                    <button class="svg-center" aria-label="Green Power Bowl Anzahl erhöhen">
+                    <p>${basketProduct.amount}</p>
+                    <button onclick="addToBasket(${basketProduct.id})" class="svg-center" aria-label="Green Power Bowl Anzahl erhöhen">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                         <path d="M5 12h14" />
                         <path d="M12 5v14" />
                       </svg>
                     </button>
                   </div>
-                  <h4>${foodMenu[categoryIndex].products[productIndex].price.toFixed(2)} €</h4>
+                  <h4>${menuProduct.price.toFixed(2)} €</h4>
                 </div>
               </article>
             </div>

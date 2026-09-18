@@ -1,3 +1,5 @@
+const foodBasket = [];
+
 const foodMenu = [
   {
     category: 'Byte Burgers',
@@ -5,7 +7,6 @@ const foodMenu = [
     products: [
       {
         id: 1,
-        ammount: 0,
         name: 'Classic Byte',
         description: 'Saftiges Rindfleisch, Cheddar, Salat, Tomate und ByteBites-Sauce.',
         price: 10.9,
@@ -14,7 +15,6 @@ const foodMenu = [
       },
       {
         id: 2,
-        ammount: 0,
         name: 'Double Stack',
         description: 'Doppeltes Rindfleisch, doppelter Cheddar, Röstzwiebeln und rauchige BBQ-Sauce.',
         price: 13.9,
@@ -23,7 +23,6 @@ const foodMenu = [
       },
       {
         id: 3,
-        ammount: 0,
         name: 'Hotfix Burger',
         description: 'Rindfleisch, Pepper Jack, Jalapeños, Salat und scharfe Chipotle-Sauce.',
         price: 12.5,
@@ -32,7 +31,6 @@ const foodMenu = [
       },
       {
         id: 4,
-        ammount: 0,
         name: 'Green Coder',
         description: 'Knuspriges Gemüse-Patty, Avocado, Salat, Tomate und vegane Kräutersauce.',
         price: 11.9,
@@ -47,7 +45,7 @@ const foodMenu = [
     products: [
       {
         id: 5,
-        ammount: 0,
+
         name: 'Basic Fries',
         description: 'Knusprige Pommes mit Meersalz und Dip nach Wahl.',
         price: 4.5,
@@ -56,7 +54,6 @@ const foodMenu = [
       },
       {
         id: 6,
-        ammount: 0,
         name: 'Cheese Overflow',
         description: 'Pommes mit cremiger Käsesauce, Frühlingszwiebeln und Röstzwiebeln.',
         price: 6.9,
@@ -65,7 +62,6 @@ const foodMenu = [
       },
       {
         id: 7,
-        ammount: 0,
         name: 'Spicy Firewall',
         description: 'Pommes mit Jalapeños, Chili-Cheese-Sauce und scharfen Gewürzen.',
         price: 7.5,
@@ -74,7 +70,6 @@ const foodMenu = [
       },
       {
         id: 8,
-        ammount: 0,
         name: 'BBQ Upgrade',
         description: 'Pommes mit Pulled Chicken, BBQ-Sauce, Käse und Röstzwiebeln.',
         price: 8.9,
@@ -89,7 +84,6 @@ const foodMenu = [
     products: [
       {
         id: 9,
-        ammount: 0,
         name: 'Green Stack',
         description: 'Blattsalat, Avocado, Gurke, Tomate, Edamame und Kräuterdressing.',
         price: 9.9,
@@ -98,7 +92,6 @@ const foodMenu = [
       },
       {
         id: 10,
-        ammount: 0,
         name: 'Chicken Cache',
         description: 'Gegrilltes Hähnchen, Reis, Salat, Mais, Tomate und Joghurt-Dressing.',
         price: 11.9,
@@ -107,7 +100,6 @@ const foodMenu = [
       },
       {
         id: 11,
-        ammount: 0,
         name: 'Power Process',
         description: 'Quinoa, Süßkartoffel, Kichererbsen, Spinat und cremiges Tahini-Dressing.',
         price: 10.9,
@@ -116,7 +108,6 @@ const foodMenu = [
       },
       {
         id: 12,
-        ammount: 0,
         name: 'Crunch Mode',
         description: 'Knuspriges Hähnchen, Salat, Rotkohl, Karotte und Honig-Senf-Dressing.',
         price: 12.5,
