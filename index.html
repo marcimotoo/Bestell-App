@@ -21,16 +21,16 @@
   <body onload="init()">
     <!-- SECTION - Header  -->
     <header>
-      <section class="header-section">
+      <section id="home" class="header-section">
         <div class="header-logo">
           <img src="./assets/images/bytebites.png" alt="grünes bytebites restaurant logo mit bit symbolen" />
           <h2>Byte<span>Bites</span></h2>
         </div>
         <nav class="nav-links">
-          <a href="">Home</a>
-          <a href="">Über Uns</a>
-          <a href="">Lieferung</a>
-          <a href="">Kontakt</a>
+          <a href="#home">Home</a>
+          <a href="#about_us">Über Uns</a>
+          <a href="#delevery">Lieferung</a>
+          <a href="#about_us">Kontakt</a>
         </nav>
         <div class="search-profile-basket">
           <svg
@@ -227,7 +227,8 @@
         </div>
       </section>
       <!-- ANCHOR - Food Menu  -->
-      <section id="food_section">
+      <section id="delevery" class="food-menu-basket-section">
+        <section id="food_section"></section>
         <!-- ANCHOR - Food Basket  -->
         <aside class="basket-sidebar">
           <section class="food_basket">
@@ -253,7 +254,7 @@
                 <h4>Gesamt</h4>
                 <p id="basket_price_total">0,00 €</p>
               </div>
-              <button>
+              <button onclick="openOrderDialog()">
                 Zur Kasse
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path d="M5 12h14" />
@@ -297,9 +298,16 @@
           </section>
         </aside>
       </section>
+      <dialog id="order_dialog" closedby="any">
+        <div class="dialog-order">
+          <h3>Deine Bestellung ist auf dem Weg!</h3>
+          <img src="./assets/images/order-confirmed.png" alt="Roller der auf dem weg ist und das Essen bringt" />
+          <button onclick="closeOrderDialog()">Zurück</button>
+        </div>
+      </dialog>
     </main>
     <!-- SECTION - Footer  -->
-    <footer class="footer-section">
+    <footer id="about_us" class="footer-section">
       <div class="footer-logo">
         <img src="./assets/images/bytebites.png" alt="grünes bytebites restaurant logo mit bit symbolen" />
         <h2>Byte<span>Bites</span></h2>

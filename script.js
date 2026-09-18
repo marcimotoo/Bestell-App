@@ -97,3 +97,14 @@ function removeFromBasket(productId) {
 
   renderBasket();
 }
+
+function openOrderDialog() {
+  document.getElementById('order_dialog').showModal();
+  foodBasket.splice(0);
+  renderBasket();
+  document.getElementById('basket_price_total').innerHTML = '0.00 €';
+}
+
+function closeOrderDialog() {
+  document.getElementById('order_dialog').close();
+}

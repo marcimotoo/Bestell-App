@@ -153,6 +153,7 @@ main {
   gap: 16px;
 
   padding: 16px;
+  margin: 16px;
 }
 
 .information > p {
@@ -201,13 +202,18 @@ main {
   gap: 16px;
 }
 /* ANCHOR - Food-Menu */
+.food-menu-basket-section {
+  display: flex;
+  justify-content: space-evenly;
+  padding-right: 16px;
+}
+
 #food_section {
   background: var(--color-bg-card);
   color: var(--color-text-dark);
   border-radius: 16px;
-  margin: 32px;
+  margin: 0px 16px 16px 16px;
   padding: 0px 32px 32px 32px;
-  position: relative;
 }
 
 .category {
@@ -224,6 +230,7 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 16px;
   max-width: 700px;
   height: auto;
   border-radius: 16px;
@@ -238,13 +245,14 @@ main {
   display: flex;
   flex-direction: column;
   background: var(--color-bg-card-soft);
-  border: 1px solid black;
+
   border-radius: 16px;
 
-  max-height: 250px;
+  max-height: 200px;
   width: 100%;
   margin: 0px;
   padding: 2px;
+  box-shadow: 0px 0px 10px -5px var(--color-bg);
 }
 
 .food-article img {
@@ -351,5 +359,14 @@ main {
   .food-article {
     display: flex;
     flex-direction: row;
+  }
+
+  .info-links,
+  .nav-links {
+    display: flex;
+  }
+
+  .search-profile-basket {
+    display: flex;
   }
 }
