@@ -45,13 +45,19 @@ header {
 .header-section {
   width: 100%;
   height: 80px;
-
   padding: 0 32px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+.footer-section {
+  height: auto;
+  min-height: 80px;
+  gap: 24px;
+  padding: 16px 32px;
+}
+
 /* ANCHOR Header - Logo */
 .footer-logo,
 .header-logo {
@@ -61,9 +67,20 @@ header {
   display: flex;
   align-items: center;
 }
+
+.footer-logo {
+  height: 64px;
+  flex-shrink: 0;
+}
+
 .footer-logo img,
 .header-logo img {
   height: 85%;
+  width: auto;
+}
+
+.header-logo h2 {
+  font-size: clamp(1.35rem, 3vw, 2rem);
 }
 /* ANCHOR Navigation */
 .info-links,
@@ -106,6 +123,28 @@ header {
   cursor: pointer;
   color: var(--color-primary);
 }
+
+.mobile-header-actions {
+  display: none;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 4px;
+  background: transparent;
+  border: 0;
+}
+
+.menu-button span {
+  width: 24px;
+  height: 2px;
+  background: var(--color-text);
+  border-radius: 2px;
+}
 /* SECTION - Main  */
 main {
   padding: 0px max(calc(50% - 720px), 0px);
@@ -122,8 +161,8 @@ main {
 }
 /* ANCHOR - Logo  */
 .bytebites-logo {
-  width: clamp(150px, 5vw, 100px);
-
+  width: clamp(100px, 12vw, 150px);
+  /* aspect-ratio: 1; */
   display: flex;
   flex-direction: column;
 
@@ -151,7 +190,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-
+  /* padding-top: clamp(60px, 8vw, 85px); */
   padding: 16px;
   margin: 16px;
 }
@@ -209,6 +248,8 @@ main {
 }
 
 #food_section {
+  flex: 1;
+  min-width: 0;
   background: var(--color-bg-card);
   color: var(--color-text-dark);
   border-radius: 16px;
@@ -258,6 +299,7 @@ main {
 .food-article img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
   border-radius: 16px;
 }
 
@@ -323,14 +365,14 @@ main {
 
   position: fixed;
 
-  bottom: 1%;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
 
   background: var(--color-primary);
 
   height: 60px;
-  width: 96%;
+  width: 100%;
 
   border-radius: 8px;
   margin: 0 auto;
@@ -372,6 +414,14 @@ main {
 }
 
 @media (max-width: 900px) {
+  .header-section {
+    padding: 0 24px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
   .food-menu-basket-section {
     flex-direction: column;
     padding: 0 16px;
@@ -395,7 +445,60 @@ main {
 
 @media (max-width: 480px) {
   .header-section {
+    justify-content: space-between;
     padding: 0 16px;
+  }
+
+  .header-logo {
+    height: 64px;
+  }
+
+  .mobile-header-actions {
+    display: flex;
+  }
+
+  .information {
+    margin: 8px 0;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .extra-information {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .rating {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .delevery-location {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #food_section {
+    padding: 0 12px 16px;
+  }
+
+  .category {
+    padding: 24px 0 16px;
+  }
+
+  .food-article {
+    max-height: none;
+  }
+
+  .food-picture {
+    width: 100%;
+    height: clamp(160px, 50vw, 220px);
+  }
+
+  .title-description-price {
+    gap: 12px;
+    padding: 12px;
   }
 
   .basket-card {
@@ -420,5 +523,25 @@ main {
 
   body {
     padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 24px 16px 100px;
+  }
+
+  .footer-logo {
+    height: 56px;
+  }
+
+  .footer-section .info-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 24px;
   }
 }
