@@ -4,6 +4,16 @@ function init() {
   renderSection();
 }
 
+function openBasket() {
+  document.getElementById('basket').classList.add('basket-open');
+  document.body.classList.add('basket-open');
+}
+
+function closeBasket() {
+  document.getElementById('basket').classList.remove('basket-open');
+  document.body.classList.remove('basket-open');
+}
+
 function renderSection() {
   for (let categoryIndex = 0; categoryIndex < foodMenu.length; categoryIndex++) {
     const foodSectionRef = document.getElementById('food_section');
@@ -38,6 +48,9 @@ function updateBasketSummary() {
   const totalPrice = basketPrice + deleveryCost;
 
   document.getElementById('basket_amount').innerHTML = totalAmount + ' Artikel';
+  document.querySelectorAll('.basket-number').forEach((basketNumber) => {
+    basketNumber.textContent = totalAmount;
+  });
   document.getElementById('basket_price').innerHTML = basketPrice.toFixed(2) + ' €';
   document.getElementById('basket_price_total').innerHTML = totalPrice.toFixed(2) + ' €';
 }
@@ -99,6 +112,7 @@ function removeFromBasket(productId) {
 }
 
 function openOrderDialog() {
+  closeBasket();
   document.getElementById('order_dialog').showModal();
   foodBasket.splice(0);
   renderBasket();
