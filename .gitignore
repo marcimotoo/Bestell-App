@@ -1,2 +1,9 @@
 .DS_Store
 .vscode
+
+# Ergänzende lokale Ausschlüsse
+Thumbs.db
+Desktop.ini
+.env
+.env.*
+!.env.example
